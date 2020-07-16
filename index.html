@@ -74,7 +74,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 white-text text-left">
-                            <h1 class="h1-reponsive white-text text-uppercase display-4 mb-0 pt-md-5 pt-5 wow fadeInLeft"
+                            <h1 class="h1-reponsive white-text text-uppercase display-3 mb-0 pt-md-5 pt-5 wow fadeInLeft"
                                 data-wow-delay="0.3s">Tu lugar<br><span class="font-weight-900">en
                                     el<br>mundo</span><br>lo eliges<br><span class="font-weight-900">tú</span></h1>
                         </div>
@@ -101,24 +101,37 @@
 
     <main role="main">
 
-        <div class="view" style="background-image: url('assets/img/bg-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view"
+            style="background-image: url('assets/img/bg-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <!-- Mask & flexbox options-->
-            <div class="d-flex justify-content-center align-items-center"style="height:100vh;">
+            <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
                 <!-- Content -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-5 white-text text-right">
-                            <h1 class="h1-reponsive white-text text-uppercase display-4 font-weight-900 mb-0 pt-md-5 pt-5 wow fadeInLeft"
+                        <div class="col-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-5 white-text text-right">
+                            <h1 class="espacio h1-reponsive font-weight-900 display-4 wow fadeInLeft mt-5 pt-1 text-uppercase"
                                 data-wow-delay="0.3s">Chiloé</h1>
                         </div>
-                        <div class="col-5">
-                            <div class="card mb-3 text-white bg-dark">
+                        <div class="col-12 col-lg-5">
+                            <div class="card mb-3 p-4 text-white bg-dark wow fadeInRight" data-wow-delay="0.6s">
                                 <div class="card-body">
-                                  <h5 class="card-title">Panel title that wraps to a new line</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h1 class="espacio h1-reponsive display-4 mt-2 mb-4 text-uppercase">Adentro</h1>
+                                    <h3 class="h2-reponsive mt-2 mb-3 font-weight-700" style="letter-spacing:5px;">"Es
+                                        momento de darse un tiempo"</h3>
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Dicta voluptas perferendis rem est neque magni dolore, nostrum quo
+                                        pariatur eveniet deserunt animi nulla temporibus, nisi reprehenderit
+                                        necessitatibus id perspiciatis totam?</p>
+
+                                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Dicta voluptas perferendis rem est neque magni dolore, nostrum quo
+                                        pariatur eveniet deserunt animi nulla temporibus, nisi reprehenderit
+                                        necessitatibus id perspiciatis totam?</p>
+
+                                    <button class="btn btn-light-green mx-5 float-right mr-auto"><i class="fas fa-angle-double-right ml-1"></i></button>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +139,25 @@
             </div>
             <!-- Mask & flexbox options-->
         </div>
-        
+
+        <div class="view"
+        style="background-image: url('assets/img/bg-chiloe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+            <!-- Content -->
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="col-12 p-5">
+                        <h1>hola</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+
     </main>
     <!-- /.container -->
 
@@ -155,14 +186,6 @@
 
         $(document).ready(function () {
 
-            $('.first-button').on('click', function () {
-
-                $('.animated-icon1').toggleClass('open');
-            });
-            $('.second-button').on('click', function () {
-
-                $('.animated-icon2').toggleClass('open');
-            });
             $('.third-button').on('click', function () {
 
                 $('.animated-icon3').toggleClass('open');

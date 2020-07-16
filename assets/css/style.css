@@ -46,6 +46,10 @@ h2 span, h3 span, h4 span, h5 span{
 	font-weight: 300;
 }
 
+.espacio {
+	letter-spacing: 12px;
+}
+
 .font-weight-900 {
 	font-weight: 900 !important;
 }
@@ -57,15 +61,20 @@ h2 span, h3 span, h4 span, h5 span{
 .font-weight-400 {
 	font-weight: 400 !important;
 }
-.display-4 {
-    font-size: 3.7rem;
+.display-3 {
 	line-height: 1;
 }
-
 .navbar-brand{
 	width: 220px;
 }
-
+.card .card-body .card-text {
+    font-size: .8rem;
+    font-weight: 100;
+    color: #fff;
+}
+.bg-dark {
+    background-color: #0000009c !important;
+}
 
 /* SCROOL MOUSE */
 
