@@ -32,7 +32,7 @@
     <!-- Main navigation -->
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-dark fixed-top">
+        <nav class="navbar navbar-dark fixed-top scrolling-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo-blanco.svg" alt="">
@@ -86,8 +86,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4 col-md-5"></div>
-                        <div class="col-4 col-md-2">
-                            <img class="wow fadeInUp" data-wow-delay="0.6s" src="assets/img/mouse.svg" alt="">
+                        <div class="col-4 col-md-2 wow fadeInUp">
+                            <img class="animated infinite pulse" data-wow-delay="0.6s" src="assets/img/mouse.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,8 @@
                                         pariatur eveniet deserunt animi nulla temporibus, nisi reprehenderit
                                         necessitatibus id perspiciatis totam?</p>
 
-                                    <button class="btn btn-light-green mx-5 float-right mr-auto"><i class="fas fa-angle-double-right ml-1"></i></button>
+                                    <button class="btn btn-light-green mx-5 float-right mr-auto"><i
+                                            class="fas fa-angle-double-right ml-1"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -141,22 +142,40 @@
         </div>
 
         <div class="view"
-        style="background-image: url('assets/img/bg-chiloe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-        <!-- Mask & flexbox options-->
-        <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
-            <!-- Content -->
-            <div class="container">
-                <div class="row">
-                   
-                    <div class="col-12 p-5">
-                        <h1>hola</h1>
+            style="background-image: url('assets/img/bg-chiloe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+                <!-- Content -->
+                <div class="container mt-5">
+                    <div class="row pt-5">
+                        <div class="col-12 col-md-6">
+                            <h1 class="display-4 text-uppercase font-weight-900 mb-3">Ven a <span class="font-weight-400">desconectarte</span> a Chiloé</h1>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img class="p-sm-1 p-lg-4 img-fluid" src="assets/img/ico1.svg" alt="">
+                                    <p class="lead text-uppercase text-center">Desconexión</p>
+                                </div>
+                                <div class="col-4">
+                                    <img class="p-sm-1 p-lg-4 img-fluid" src="assets/img/ico2.svg" alt="">
+                                    <p class="lead text-uppercase text-center">Conservación</p>
+                                </div>
+                                <div class="col-4">
+                                    <img class="p-sm-1 p-lg-4 img-fluid" src="assets/img/ico3.svg" alt="">
+                                    <p class="lead text-uppercase text-center">Descanso</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-light-green btn-block px-5">
+                                <span class="lead">Míremos los detalles</span></button>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="assets/img/mapa.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
+                <!-- Content -->
             </div>
-            <!-- Content -->
+            <!-- Mask & flexbox options-->
         </div>
-        <!-- Mask & flexbox options-->
-    </div>
 
     </main>
     <!-- /.container -->
@@ -193,7 +212,7 @@
         });
     </script>
 
-
+    
 </body>
 
 </html>

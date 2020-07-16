@@ -76,6 +76,27 @@ h2 span, h3 span, h4 span, h5 span{
     background-color: #0000009c !important;
 }
 
+.lead {
+    font-size: .9rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.btn-light-green {
+    color: #000;
+    background-color: #d9f24c !important;
+}
+
+.btn-light-green:hover {
+    color: #555;
+    background-color: #97c95d;
+}
+.btn-light-green:not([disabled]):not(.disabled):active, .btn-light-green:not([disabled]):not(.disabled).active, .show > .btn-light-green.dropdown-toggle {
+    background-color: #ecff81 !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
 /* SCROOL MOUSE */
 
 .scroll-downs {
@@ -285,26 +306,34 @@ h2 span, h3 span, h4 span, h5 span{
 			}
 
 
+@media (max-width: 992px) {
+	.lead {
+		font-size: .7rem;
+	}
+}
+
+
 @media (max-width: 740px) {
     html,
     body,
     header,
     .view {
       height: 100vh;
-    }
+	}
   }
 
-  .top-nav-collapse {
-    background-color: #78909c !important;
-  }
 
   .navbar:not(.top-nav-collapse) {
     background: transparent !important;
   }
 
+  .top-nav-collapse {
+    background-color: #111111eb !important;
+  }
+
   @media (max-width: 991px) {
    .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
+    background: #111111eb !important;
    }
   }
   
