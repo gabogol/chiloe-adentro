@@ -35,26 +35,37 @@ li{
 	list-style: none;
 }
 
-h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 90px;
 	display: inline-block;
 	position: relative;
 	line-height: 100%;
-	font-weight: 800;
 }
-h3{	font-size: 50px;}
-h4{	font-size: 25px;}
-h5{	font-size: 1.1em;}
-h6{	font-size: 0.8em;}
 
 h2 span, h3 span, h4 span, h5 span{
 	font-weight: 300;
 }
 
+.font-weight-900 {
+	font-weight: 900 !important;
+}
+
+.font-weight-700 {
+	font-weight: 700 !important;
+}
+
+.font-weight-400 {
+	font-weight: 400 !important;
+}
+.display-4 {
+    font-size: 3.7rem;
+	line-height: 1;
+}
+
 .navbar-brand{
 	width: 220px;
 }
+
 
 /* SCROOL MOUSE */
 
