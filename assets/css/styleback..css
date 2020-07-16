@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'GFS Didot';
+    src: url('../fonts/GFSDidot-Regular.woff2') format('woff2'),
+        url('../fonts/GFSDidot-Regular.woff') format('woff'),
+        url('../fonts/GFSDidot-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sackers Gothic Light';
+    src: url('../fonts/SackersGothicStd-Light.woff2') format('woff2'),
+        url('../fonts/SackersGothicStd-Light.woff') format('woff'),
+        url('../fonts/SackersGothicStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sackers Gothic Std';
+    src: url('../fonts/SackersGothicStd-Medium.woff2') format('woff2'),
+        url('../fonts/SackersGothicStd-Medium.woff') format('woff'),
+        url('../fonts/SackersGothicStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sackers Gothic heavy';
+       src: url('../fonts/ackersGothicStd-Heavy.woff2') format('woff2'),
+        url('../fonts/SackersGothicStd-Heavy.woff') format('woff'),
+        url('../fonts/SackersGothicStd-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+@media (min-width: 1300px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+	    max-width: 1220px;
+	}
+}
+
+
+
+*,
+*:before,
+*:after {
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+	position: relative;
+	height: 100%;
+}
+body {
+	-webkit-overflow-scrolling: touch;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 200;
+	color: #444;
+	line-height: 160%;
+	background: #fff;
+	font-size:16px;
+}
+
+a, a:hover{
+	color:#be802e;
+	transition: all .5s;
+	text-decoration: none;
+}
+
+h2, h3, h4, h5, h6{
+	font-family: 'GFS Didot', serif;
+	font-size: 2.6em;
+	display: inline-block;
+	position: relative;
+	line-height: 100%;
+}
+h3{	font-size: 1.7em;}
+h4{	font-size: 1.3em;}
+h5{	font-size: 1.1em;}
+h6{	font-size: 0.8em;}
+
+h2.subrayado:before, h3.subrayado:before, h4.subrayado:before{
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    background: #be802e;
+    display: block;
+    content: "";
+}
+
+
+/* FONDOS DE SECCIONES */
+
+.bg-vino-ravanal{
+	background:url(../img/bg-vino1.jpg) center top no-repeat;
+}
+
+
+/* HEADER INTERIOR */
+
+.cabecera{
+	background:url(../img/bg-header2.png) center top no-repeat;
+	height: 190px;
+	font-family: 'Sackers Gothic Light';
+	font-size:15px;
+}
+.logo-top{
+	width: 250px !important;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -125px;
+    z-index: 1000;
+
+}
+.btn-menu{
+	width: 30px;
+	height: auto;
+	 filter: invert(27%);
+}
+.btn-menu:hover{
+	 filter: invert(0%);
+	}
+.btn-carro{
+	width: 45px;
+}
+.menu-right li{
+	border:none !important;
+}
+
+/* ESTILOS GENERALES */
+
+.gothic{
+	font-family: 'Sackers Gothic std';
+}
+.gothic-light{
+	font-family: 'Sackers Gothic Light';
+}
+.didot{
+	font-family: 'GFS Didot', serif;
+}
+.bg-oscuro{
+	background: #000 url(../img/bg-hoja-dorado.svg) no-repeat center center;
+	background-size: 300%;
+}
+.bg-blanco{
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+	margin-top: 110px;
+}
+.linea{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #be802e;
+	margin-bottom: 10px;
+}
+.migadepan li{
+	display: inline-block;
+	list-style: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.migadepan li a{
+	color: #777;
+	display: inline-block;
+	position: relative;
+	transition: all .7s;
+}
+.migadepan li a:before, .migadepan li a:hover:before{
+	position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: #be802e;
+    display: block;
+    content: "";
+    transition: all .5s;
+  }
+.migadepan li a:hover:before{
+    width: 90%;
+   }
+
+.text-primary{
+	color: #be802e !important;
+}
+
+/*   VINO   */
+
+.alto-110{
+	height: 110px;
+}
+.el-vino{
+	margin-top: -110px;
+}
+.table td, .table th{
+	border-bottom: 1px solid #be802e;
+	border-top: 0px solid #be802e;
+}
+.table th{
+	border-right: 0px solid #eaeaea;
+}
+.btn-dorado{
+	background:#fff url(../img/flecha-boton-dorado.svg) no-repeat 95% center;
+	background-size: 25%;
+	border-radius: 0;
+	border:1px solid #be802e;
+	padding: 7px 15px;
+	display: block;
+	text-align: left;
+	font-size: 14px;
+}
+.btn-dorado:hover{
+	background:#be802e  url(../img/flecha-boton-blanco.svg) no-repeat 98% center;
+	background-size: 25%;
+	color: #fff;
+}
+
+@media (max-width: 600px) {
+	body{
+		font-size: 13px;
+	}
+	h2{
+		font-size: 1.8em;
+	}
+	h3{
+		font-size: 1.3em;
+	}
+	h4{
+		font-size: 1em;
+	}
+	.bg-vino-ravanal{
+		background:url(../img/bg-vino1.jpg) center 100px no-repeat;
+		background-size: contain;
+	}
+	.cabecera{
+		background:url(../img/bg-header2.png) left top no-repeat;
+		height: 150px;
+		font-family: 'Sackers Gothic Light';
+		font-size:11px;
+	}
+	.logo-top{
+		width: 170px !important;
+		height: auto;
+		position: absolute;
+		left: 50%;
+		margin-left: -95px;
+	    z-index: 1000;
+	    top: 0px;
+	}
+	.carro-movil{
+		position: absolute;
+		right: 18px;
+		top: 22px;
+	}
+	.btn-carro{
+		width: 30px;
+	}
+	.btn-menu{
+		width: 25px;
+		margin-top: 10px !important;
+	}
+	.cabecera .list-group-item{
+		background:none;
+	}
+	.sup{
+		margin-top: 12px !important;
+	}
+	.bg-blanco{
+		margin-top: 0px;
+	}
+	.el-vino{
+		margin-top: -50px;
+		max-width: 140%;
+		margin-left: -8px;
+	}
+	.migadepan li{
+		font-size: 9px;
+		letter-spacing: 2px;
+		margin-left: 2px !important;
+	} 
+	.migadepan li a{
+		margin-left: 2px !important;
+	}
+	.ancho-movil{
+		margin-left: -35%;
+		width: 135%;
+	}
+	.ancho-titulo{
+		margin-left: -35%;
+	}
+	.alto-110{
+		height: 70px;
+	}
+}

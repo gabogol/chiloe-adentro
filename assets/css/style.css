@@ -1,0 +1,134 @@
+
+*,
+*:before,
+*:after {
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+	position: relative;
+	height: 100%;
+}
+body {
+	-webkit-overflow-scrolling: touch;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	color: #252523;
+	line-height: 160%;
+	background: #fff;
+	font-size:16px;
+}
+
+a, a:hover{
+	color:#4f671b;
+	transition: all .5s;
+	text-decoration: underline;
+}
+
+li{
+	list-style: none;
+}
+
+h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 90px;
+	display: inline-block;
+	position: relative;
+	line-height: 100%;
+	font-weight: 800;
+}
+h3{	font-size: 50px;}
+h4{	font-size: 25px;}
+h5{	font-size: 1.1em;}
+h6{	font-size: 0.8em;}
+
+h2 span, h3 span, h4 span, h5 span{
+	font-weight: 300;
+}
+.bg-home{
+	background: url(../img/bg-home.jpg) no-repeat center bottom ;
+	background-size:;
+	height: 100%;
+}
+.bg-home h2{
+	color:#fff;
+}
+.bg-slider{
+	background: url(../img/bg-slide-1.jpg) no-repeat top center;
+	background-size: cover;
+}
+.bg-slider-2{
+	background: url(../img/bg-slide-2.jpg) no-repeat top center;
+	background-size: ;
+}
+.bg-slider-3{
+	background: url(../img/bg-slide-3.jpg) no-repeat top center;
+	background-size: ;
+}
+.bg-slider h3{
+	letter-spacing: 6px;
+}
+.bg-multi{
+	background: 	url(../img/bg-multi.png) ;
+	
+}
+.btn-amarillo{
+	background-color: #e0f35c;
+}
+
+
+/* MAPA */
+.union-top{
+	background: url(../img/union-a-blanco.png) no-repeat;
+	width: 100%;
+	min-height: 300px;
+	position: absolute;
+	top: -300px;
+	left: 0;
+}
+
+
+
+
+
+
+
+
+/* SCROOL MOUSE */
+
+.scroll-downs {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin: auto;
+  width :25px;
+  height: 40px;
+  z-index: 10000;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 13px;
+  height: 28px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
