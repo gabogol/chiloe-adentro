@@ -46,6 +46,7 @@ h2 span, h3 span, h4 span, h5 span{
 	font-weight: 300;
 }
 
+
 .espacio {
 	letter-spacing: 12px;
 }
@@ -67,6 +68,15 @@ h2 span, h3 span, h4 span, h5 span{
 .navbar-brand{
 	width: 220px;
 }
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+.top-nav-collapse {
+    background-color: #111111eb !important;
+  }
+
 .card .card-body .card-text {
     font-size: .8rem;
     font-weight: 100;
@@ -74,6 +84,9 @@ h2 span, h3 span, h4 span, h5 span{
 }
 .bg-dark {
     background-color: #0000009c !important;
+}
+.col-k {
+	background-color: #0000009c !important;
 }
 
 .lead {
@@ -322,22 +335,8 @@ h2 span, h3 span, h4 span, h5 span{
 	}
   }
 
-
-  .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-  }
-
-  .top-nav-collapse {
-    background-color: #111111eb !important;
-  }
-
   @media (max-width: 991px) {
    .navbar:not(.top-nav-collapse) {
     background: #111111eb !important;
    }
-  }
-  
-  .hr-light {
-    border-top: 3px solid #fff;
-    width: 80px;
   }
