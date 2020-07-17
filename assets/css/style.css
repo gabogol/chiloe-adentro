@@ -20,9 +20,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	color: #252523;
-	line-height: 160%;
+	line-height: 140%;
 	background: #fff;
-	font-size:16px;
+	font-size:14px;
 }
 
 a, a:hover{
@@ -45,6 +45,15 @@ h1, h2, h3, h4, h5, h6{
 h2 span, h3 span, h4 span, h5 span{
 	font-weight: 300;
 }
+
+.somos {
+	background-image: url('../img/bg-somos.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center top; 
+	padding-top: 230px;
+}
+
 
 
 .espacio {
@@ -369,9 +378,25 @@ footer .nav-link {
     .view {
 	  height: 100%;
 	}
-	.elmapa {
-		padding: 25% 0;
+	.somos {
+		background-image: url('../img/bg-somos-sm.jpg'); 
+		background-position: center top; 
+		padding-top: 320px;
 	}
   }
 
-@media (max-width: )
+@media (max-width: 576px) {
+	.display-3 {
+		font-size: 2.5em;
+	}
+	.display-4 {
+		font-size: 1.8em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.navbar-brand {
+		width: 170px;
+	}
+
+}
