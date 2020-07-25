@@ -132,22 +132,16 @@ h2 span, h3 span, h4 span, h5 span{
 }
 
 footer {
-	padding-top: 60px;
-	background: url('../img/bg-footer.jpg') center center;
+	padding-top: 160px;
+	background: url('../img/bg-footer.jpg') no-repeat center;
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.63);
-	background-size: auto;
-	height: 500px;
-	display: flex;
-	align-items: end;
 }
 
 footer.page-footer a {
-    font-size: 1.3em;
-}
-
-footer .nav-link {
-    padding: .5rem 2rem;
+	font-size: 1.1em;
+	padding-bottom: 2px;
+	border-bottom: 1px #d9f24c solid;
 }
 
 .footer-copyright {
