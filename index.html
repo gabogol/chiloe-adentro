@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- MDB -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -28,22 +27,32 @@
 </head>
 
 <body>
-
     <!-- Main navigation -->
-    <header>
+    <header class="header">
         <!--Navbar-->
-        <nav class="navbar navbar-dark fixed-top scrolling-navbar">
+        <nav class="navbar navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo-blanco.svg" alt="">
                 </a>
-                <!-- Collapse button -->
-                <button class="navbar-toggler third-button" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon3"><span></span><span></span><span></span></div>
-                </button>
-
+                <ul class="navbar-nav flex-column ml-auto nav-flex-icons pt-5 text-center">
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler third-button py-3 " type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon3"><span></span><span></span><span></span></div>
+                    </button>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent22">
 
@@ -59,15 +68,11 @@
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
                     </ul>
-                    <!-- Links -->
                 </div>
-                <!-- Collapsible content -->
             </div>
         </nav>
 
-        <!-- Full Page Intro -->
-        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('assets/img/bg-home.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <!-- Mask & flexbox options-->
+        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background:none;">
             <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                 <!-- Content -->
                 <div class="container">
@@ -92,16 +97,12 @@
                     </div>
                 </div>
             </div>
-            <!-- Mask & flexbox options-->
         </div>
-        <!-- Full Page Intro -->
     </header>
-    <!-- Main navigation -->
-
 
     <main role="main">
-
-        <div class="view" style="background-image: url('assets/img/bg-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view"
+            style="background-image: url('assets/img/bg-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <div class="d-flex justify-content-center align-items-center vh-100">
                 <div class="container">
                     <div class="row">
@@ -136,7 +137,8 @@
             </div>
         </div>
 
-        <div class="view " style="background-image: url('assets/img/bg-chiloe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: bottom left; padding-top: 120px;">
+        <div class="view "
+            style="background-image: url('assets/img/bg-chiloe.jpg'); background-repeat: no-repeat; background-size: cover; background-position: bottom left; padding-top: 120px;">
             <div class="d-flex justify-content-center align-items-center vh-100">
                 <div class="container">
                     <div class="row pt-5">
@@ -168,7 +170,8 @@
             </div>
         </div>
 
-        <div class="view" style="background-image: url('assets/img/bg-map2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top: 120px;">
+        <div class="view"
+            style="background-image: url('assets/img/bg-map2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top: 120px;">
             <div class="d-flex justify-content-center align-items-center vh-100">
                 <div class="container mt-5">
                     <div class="row pt-5">
@@ -246,7 +249,8 @@
             </div>
         </div>
 
-        <div class="view" style="background-image: url('assets/img/bg-chucao.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view"
+            style="background-image: url('assets/img/bg-chucao.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <div class="d-flex justify-content-center align-items-center vh-100 pt-5 mt-5 pt-md-0 mt-md-0">
                 <div class="container mt-5">
                     <div class="row">
@@ -317,10 +321,31 @@
                     </ul>
                 </div>
             </div>
+           
+            <div class="row text-center">
+                <div class="col text-white">
+                    <a class="waves-effect waves-light align-middle">
+                        <i class="fab fa-facebook-f fa-lg p-2"></i>
+                    </a>
+                    <a class="waves-effect waves-light align-middle">
+                        <i class="fab fa-instagram fa-lg p-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center pt-3">
+                <div class="col text-white">
+                    <small>Todos los derechos reservados © 2020 Chiloé Adentro</small>
+                </div>
+               
+            </div>
         </div>
-        <!-- Copyright -->
+        
     </footer>
-    <div class="footer-copyright text-center text-white py-3"><small>Todos los derechos reservados © 2020 Chiloé Adentro</small></div>
+    <!--
+    <div class="footer-copyright text-center text-white py-3">
+        <small>Todos los derechos reservados © 2020 Chiloé Adentro</small>
+    </div>-->
+    
 
     <!-- Optional JavaScript -->
     <!-- JQuery -->
@@ -349,6 +374,7 @@
                 $('.animated-icon3').toggleClass('open');
             });
         });
+
     </script>
 
 
