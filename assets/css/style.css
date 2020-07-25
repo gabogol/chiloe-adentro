@@ -138,7 +138,7 @@ footer {
 	background-color: rgba(0, 0, 0, 0.63);
 }
 
-footer.page-footer a {
+footer .linea a  {
 	font-size: 1.1em;
 	padding-bottom: 2px;
 	border-bottom: 1px #d9f24c solid;
