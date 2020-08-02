@@ -64,7 +64,19 @@ h2 span, h3 span, h4 span, h5 span{
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center top; 
-	padding-top: 230px;
+	padding-top: 190px;
+}
+
+.contacto {
+	background-image: url('../img/bg-chucao.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center center;
+}
+
+.contacto .container-fluid a, a:hover {
+		color: #fff;
+		transition: all .5s;
 }
 
 .espacio {
@@ -148,6 +160,31 @@ footer .linea a  {
 	background: #16261b;
 }
 
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+	list-style: none;
+}
+
+.carousel-indicators li {
+    background-color: #d9f24c;
+}
+
+.carousel-indicators .active {
+	opacity: 1;
+	background-color: #fff;
+}
+
 /* SCROOL MOUSE */
 
 .scroll-downs {
@@ -212,7 +249,7 @@ footer .linea a  {
 			display: block;
 			position: absolute;
 			height: 3px;
-			width: 80%;
+			width: 100%;
 			border-radius: 9px;
 			opacity: 1;
 			left: 0;
@@ -363,21 +400,33 @@ footer .linea a  {
 			}
 
 
+@media (max-width: 1200px) {
+	
+	.display-4 {
+		font-size: 3rem;
+	}
+}
+
+
+
 @media (max-width: 992px) {
 	.lead {
 		font-size: .7rem;
 	}
 	.display-3 {
-		font-size: 3.5em;
+		font-size: 4.5em;
+	}
+	.display-4 {
+		font-size: 2.5rem;
+	}
+	.contacto {
+		background-image: none; 
+		background: #f6f6f6;
 	}
 }
 
 
-@media (max-width: 991px) {
-	.navbar:not(.top-nav-collapse) {
-	 background: #111111eb !important;
-	}
-   }
+
 
 @media (max-width: 768px) {
     html,
@@ -389,22 +438,32 @@ footer .linea a  {
 	.somos {
 		background-image: url('../img/bg-somos-sm.jpg'); 
 		background-position: center top; 
-		padding-top: 320px;
+		padding-top: 30px;
 	}
   }
 
 @media (max-width: 576px) {
 	.display-3 {
-		font-size: 2.5em;
+		font-size: 4em;
 	}
 	.display-4 {
-		font-size: 1.8em;
+		font-size: 32px;
 	}
 	h3 {
 		font-size: 1em;
 	}
-	.navbar-brand {
-		width: 170px;
-	}
+	
 
 }
+
+@media (max-width: 375px) {
+	.navbar:not(.top-nav-collapse) {
+	 background: #111111eb !important;
+	}
+	.display-3 {
+		font-size: 3em;
+	}
+	.somos {
+		padding-top: 130px;
+	}
+   }
