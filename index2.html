@@ -30,45 +30,44 @@
     <!-- Main navigation -->
     <header class="header">
         <!--Navbar-->
-
         <nav class="navbar navbar-dark">
-            <div class="menu-btn text-center">
-                <a class="btn-open fas fa-bars" href="javascript:void(0)"></a>
-                <ul class="navbar-nav flex-column nav-flex-icons pt-1 pt-md-3">
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="overlay">
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <ul>
-                                <li><a href="#">About Company</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="container-lg">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo-blanco.svg" alt="">
                 </a>
-                
+                <ul class="navbar-nav flex-column nav-flex-icons pt-1 pt-md-5 text-center">
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler third-button py-3" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon3"><span></span><span></span><span></span></div>
+                    </button>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -396,8 +395,7 @@
                 </div>
             </div>
             <div class="container-fluid d-block d-sm-none text-white h-100">
-                <div class="row text-center"
-                    style="background-image: url(assets/img/bg-contacto-sm.png); background-repeat: no-repeat; background-size: cover; background-position: center bottom;">
+                <div class="row text-center" style="background-image: url(assets/img/bg-contacto-sm.png); background-repeat: no-repeat; background-size: cover; background-position: center bottom;">
                     <div class="col-12 py-3">
                         <a href="tel:569842356000">+56 9842 356000</a>
                     </div>
@@ -472,22 +470,9 @@
         new WOW().init();
 
         $(document).ready(function () {
-
-            $(".menu-btn a").click(function () {
-                $(".overlay").fadeToggle(200);
-                $(this).toggleClass('btn-open').toggleClass('btn-close');
+            $('.third-button').on('click', function () {
+                $('.animated-icon3').toggleClass('open');
             });
-
-            $('.overlay').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-            $('.menu a').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
         });
     </script>
 
