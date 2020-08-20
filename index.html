@@ -32,12 +32,10 @@
         <!--Navbar-->
 
         <nav class="navbar navbar-dark">
-            <div class="menu-btn text-center">
-
+            <div class="menu-btn text-center mr-0 mr-md-3 mr-lg-5">
                 <a class="navbar-toggler first-button btn-open" href="javascript:void(0)" type="button">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
-            </a>
-
+                </a>
                 <ul class="navbar-nav flex-column nav-flex-icons pt-1 pt-md-3">
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link waves-effect waves-light">
@@ -57,11 +55,10 @@
                     <ul>
                         <li>
                             <ul>
-                                <li><a href="#">About Company</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
+                                <li><a href="#">Chiloe Adentro</a></li>
+                                <li><a href="#">El proyecto</a></li>
+                                <li><a href="#">Somos</a></li>
+                                <li><a href="#">Contacto</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -498,19 +495,30 @@
     <script>
         $(document).ready(function () {
 
-$('.first-button').on('click', function () {
+            $('.first-button').on('click', function () {
 
-  $('.animated-icon1').toggleClass('open');
-});
-$('.second-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+            });
+            $('.second-button').on('click', function () {
 
-  $('.animated-icon2').toggleClass('open');
-});
-$('.third-button').on('click', function () {
+                $('.animated-icon2').toggleClass('open');
+            });
+            $('.third-button').on('click', function () {
 
-  $('.animated-icon3').toggleClass('open');
-});
-});
+                $('.animated-icon3').toggleClass('open');
+            });
+        });
+    </script>
+   <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 750) {
+          $(".menu-btn").addClass("fondito");
+        } else {
+          $(".menu-btn").removeClass("fondito");
+        }
+      });
+    });
     </script>
 
 </body>

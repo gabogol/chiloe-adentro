@@ -47,11 +47,16 @@ a, a:hover{
     z-index: 999;
     display: inline;
     font-size: 22px;
+    padding: 15px 5px;
 }
 .menu-btn a {
     display: inline-block;
     text-decoration: none;
     /* safari hack */
+}
+.fondito {
+    background: #0000009c;
+    border-radius: 15px;
 }
 .btn-open:after {
     color: #fff;
@@ -97,14 +102,14 @@ a, a:hover{
 }
 .overlay .menu ul li {
     float: left;
-    padding: 20px 0;
+    padding: 40px 0;
     width: 100%;
     list-style: none;
     text-align: center;
     text-transform: uppercase;
 }
 .overlay .menu ul li a {
-    color: #34B484;
+    color: #ecff81;
     font-weight: bold;
     font-size: 20px;
 }
@@ -121,11 +126,11 @@ a, a:hover{
 .overlay .menu ul ul li a {
     color: #fff;
     text-transform: capitalize;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: lighter;
+    font-size: 28px;
 }
 .overlay .menu ul ul li a:hover {
-    color: #34b484;
+    color: #ecff81;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -142,7 +147,8 @@ a, a:hover{
         margin-top: 20px;
     }
     .menu-btn {
-        right: 25px;
+        right: 5px;
+        top: 5px;
     }
 }
 
@@ -354,15 +360,15 @@ footer .linea a  {
     }
     
     .animated-icon1 span {
-    background: #e65100;
+    background: #fff;
     }
     
     .animated-icon2 span {
-    background: #e3f2fd;
+    background: #fff;
     }
     
     .animated-icon3 span {
-    background: #f3e5f5;
+    background: #fff;
     }
     
     .animated-icon1 span:nth-child(1) {
