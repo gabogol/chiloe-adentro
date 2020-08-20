@@ -29,50 +29,49 @@
 <body>
     <!-- Main navigation -->
     <header class="header">
-        <!--Navbar-->
 
-        <nav class="navbar navbar-dark">
-            <div class="menu-btn text-center">
+        <!--    Made by Erik Terwan    -->
+        <!--   24th of November 2015   -->
+        <!--        MIT License        -->
+        <nav role="navigation" class="navbar-nav navbar-dark ">
+            <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
 
-                <a class="navbar-toggler first-button btn-open" href="javascript:void(0)" type="button">
-                    <div class="animated-icon1"><span></span><span></span><span></span></div>
-            </a>
+                <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
 
-                <ul class="navbar-nav flex-column nav-flex-icons pt-1 pt-md-3">
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Info</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="https://erikterwan.com/" target="_blank">
+                        <li>Show me more</li>
+                    </a>
                 </ul>
-            </div>
-
-            <div class="overlay">
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <ul>
-                                <li><a href="#">About Company</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
-                                <li><a href="#">Designers</a></li>
-                                <li><a href="#">Developers</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="container-lg">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-blanco.svg" alt="">
-                </a>
-
             </div>
         </nav>
 
@@ -475,42 +474,6 @@
     <script>
         new WOW().init();
 
-        $(document).ready(function () {
-
-            $(".menu-btn a").click(function () {
-                $(".overlay").fadeToggle(200);
-                $(this).toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-            $('.overlay').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-            $('.menu a').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-
-$('.first-button').on('click', function () {
-
-  $('.animated-icon1').toggleClass('open');
-});
-$('.second-button').on('click', function () {
-
-  $('.animated-icon2').toggleClass('open');
-});
-$('.third-button').on('click', function () {
-
-  $('.animated-icon3').toggleClass('open');
-});
-});
     </script>
 
 </body>
