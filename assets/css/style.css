@@ -322,6 +322,69 @@ footer .linea a  {
 	background-color: #fff;
 }
 
+.parcelas .card {
+    font-weight: 400;
+    border: 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background: #000000b8;
+    border-radius: .0;
+}
+
+.parcelas .nav-tabs {
+    border-bottom: 0;
+}
+
+.parcelas .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #8bc34a;
+    border-color: transparent;
+}
+
+.parcelas .nav-tabs .nav-link {
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.parcelas .tab-content {
+    padding: 5%;
+}
+
+.parcelas .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -16%;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.parcelas .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.86rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: transparent;
+    border-radius: .125rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 /* Icon 1 */
 

@@ -286,26 +286,166 @@
         </div>
 
         <div class="view pb-5 pb-md-1"
-            style="background-image: url('assets/img/bg-map2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top: 130px;">
+            style="background-image: url('assets/img/bg-map3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top: 130px;">
             <div class="d-flex justify-content-center align-items-center vh-100">
                 <div class="container mt-5">
                     <div class="row pt-5">
                         <div class="col-12 col-md-5 white-text">
                             <h1 class=" display-4 h1-reponsive text-uppercase wow fadeInLeft" data-wow-delay="0.3s">
                                 <span class="font-weight-900">Encuentra </span>tu lugar en<span class="font-weight-900">
-                                    el mundo</span> con solo<span class="font-weight-900"> un clic</span></h1>
+                                    el mundo</span> con solo<spanx class="font-weight-900"> un clic</span></h1>
                             <p class="py-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Hic, soluta dicta. Illum voluptatibus sapiente iure officia soluta
                                 voluptate ipsam impedit.</p>
-                            <button class="btn btn-light-green px-5 wow fadeInUp" data-wow-delay="1.2s">
-                                <span class="lead">Más info</span></button>
+                            <!-- <button class="btn btn-light-green px-5 wow fadeInUp" data-wow-delay="1.2s">
+                                <span class="lead">Más info</span></button> -->
+
+                            <div class="btn-group dropright wow fadeInUp" data-wow-delay="1.2s">
+                                <button type="button" class="btn btn-light-green px-5"><span class="lead">Más
+                                        info</span></button>
+                                <button type="button" class="btn btn-light-green dropdown-toggle px-3"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item ditem">Parcela 1</a>
+                                    <a class="dropdown-item" href="#">Parcela 2</a>
+                                    <a class="dropdown-item" href="#">Parcela 3</a>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-7 wow fadeInRight" data-wow-delay="0.5s">
-                            <img class="img-fluid" src="assets/img/plano.png" alt="">
+                        <div class="col-12 col-md-7 pl-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <div class="parcelas d-none mt-5 text-white" id="Parcela1">
+                                <div class="card">
+                                    <ul class="nav nav-tabs nav-justified md-tabs green darken-3" id="myTabJust"
+                                        role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link lead active" id="home-tab-just" data-toggle="tab"
+                                                href="#home-just" role="tab" aria-controls="home-just"
+                                                aria-selected="true">PARCELA 32</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link lead" id="profile-tab-just" data-toggle="tab"
+                                                href="#profile-just" role="tab" aria-controls="profile-just"
+                                                aria-selected="false">VER FOTOS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link lead" id="contact-tab-just" data-toggle="tab"
+                                                href="#contact-just" role="tab" aria-controls="contact-just"
+                                                aria-selected="false">CONTACTAR</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content card" id="myTabContentJust">
+                                        <div class="tab-pane fade show active" id="home-just" role="tabpanel"
+                                            aria-labelledby="home-tab-just">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img class="img-fluid" src="assets/img/sendero.png" alt="">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h2 class="mb-5 text-uppercase">Parcela <span
+                                                            class="font-weight-700">32</span></h2>
+                                                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                        sold out mcsweeney's organic lomo retro
+                                                        fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify
+                                                        pitchfork tattooed craft beer, iphone
+                                                        skateboard locavore carles etsy salvia banksy hoodie helvetica.
+                                                    </p>
+                                                    <hr class="">
+                                                    <h4>10.345 m2 / <span class="font-weight-700">UF 189</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile-just" role="tabpanel"
+                                            aria-labelledby="profile-tab-just">
+                                            <!--Carousel Wrapper-->
+                                            <div id="carousel-example-2"
+                                                class="carousel slide carousel-fade z-depth-1-half"
+                                                data-ride="carousel">
+                                                <!--Indicators-->
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carousel-example-2" data-slide-to="0"
+                                                        class="active"></li>
+                                                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                                </ol>
+                                                <!--/.Indicators-->
+                                                <!--Slides-->
+                                                <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item active">
+                                                        <div class="view">
+                                                            <img class="d-block w-100"
+                                                                src="assets/img/parcela01.jpg"
+                                                                alt="First slide">
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <!--Mask color-->
+                                                        <div class="view">
+                                                            <img class="d-block w-100"
+                                                                src="assets/img/parcela01.jpg"
+                                                                alt="Second slide">
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <!--Mask color-->
+                                                        <div class="view">
+                                                            <img class="d-block w-100"
+                                                                src="assets/img/parcela01.jpg"
+                                                                alt="Third slide">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--/.Slides-->
+
+                                            </div>
+                                            <!--/.Carousel Wrapper-->
+                                        </div>
+                                        <div class="tab-pane fade" id="contact-just" role="tabpanel"
+                                            aria-labelledby="contact-tab-just">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h2 class="mb-5 text-uppercase"><span class="font-weight-700">Déjanos tus</span><br> dudas o comentarios</h2>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Puedes preguntar por esta u otra parcela. Si necesitas más información te responderemos a la brevedad. </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <form class="text-right">
+                                                    <div class="form-row mb-4">
+                                                        <div class="form-group col-md-6">
+                                                            <input type="text" id="Nombre" class="form-control mb-4" placeholder="Nombre y apellido">
+                                                            <input type="tel" id="Teléfono" class="form-control mb-4" placeholder="Telefono">
+                                                            <input type="text" id="Parcela" class="form-control mb-4" placeholder="Parcela 32">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input type="mail" id="Correo" class="form-control mb-4" placeholder="Correo electrónico">
+                                                            <textarea id="Mensaje" class="form-control md-textarea mb-4" rows="3" placeholder="Mensaje"></textarea>
+                                                            <button type="submit" class="btn btn-light-green btn-block px-5"><span class="lead">Enviar</span></button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="close text-white py-2" aria-label="Close" id="cierra">
+                                        <span aria-hidden="true">x</span>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <!--<img class="img-fluid" src="assets/img/plano.png" alt="">-->
                         </div>
+                       
                     </div>
+
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="view somos">
@@ -509,16 +649,36 @@
             });
         });
     </script>
-   <script>
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(document).scrollTop() > 750) {
-          $(".menu-btn").addClass("fondito");
-        } else {
-          $(".menu-btn").removeClass("fondito");
-        }
-      });
-    });
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 750) {
+                    $(".menu-btn").addClass("fondito");
+                } else {
+                    $(".menu-btn").removeClass("fondito");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('.ditem').click(function (event) {
+                $('#Parcela1').fadeToggle("slow");
+            });
+            $('a').click(function () {
+                $('#Parcela1').removeClass('d-none');
+            });
+
+        });
+
+        $(function () {
+            $('#cierra').click(function () {
+                $('#Parcela1').addClass('d-none');
+            });
+
+        });
+
     </script>
 
 </body>
